@@ -21,8 +21,8 @@
                 <label for="select-type">Escolha a função</label>
                 <select name="select-type" id="select-type">
                     <option value="" selected hidden></option>
-                    <option value="check">Lista de verificação</option>
-                    <option value="notas">Notas</option>
+                    <option id="check" value="check">Lista de verificação</option>
+                    <option id="note" value="notas">Notas</option>
                 </select>
             </div>
             <!--select-->
@@ -32,7 +32,7 @@
                 <div class="title">
                     <p id="title-add">Título</p>
                     <div class="inputs-title">
-                        <input type="text" name="title" placeholder="Título">
+                        <input type="text" placeholder="Título">
                         <input type="button" value="Guardar">
                     </div>
                     <!--inputs-title-->
@@ -40,23 +40,10 @@
                 <!--title-->
 
                 <div class="checklist">
-                    <div class="activity">
-                        <input type="text" placeholder="Informe a atividade">
-                        <input type="button" value="Adicionar">
-                    </div>
-                    <!--activity-->
-
-                    <div class="activity-add">
-                        <input type="checkbox" name="activity" id="activity">
-                        <p id="newActivity">Atividade 1</p>
-                        <img src="./assets/trash.svg" alt="trash">
-                    </div>
-                    <!--activity-ad-->
                 </div>
                 <!--checklist-->
 
-                <div class="notes">
-                    <textarea name="notes" id="" cols="30" rows="10"></textarea>
+                <div class="notes">   
                 </div>
                 <!--notes-->
             <!--function-->

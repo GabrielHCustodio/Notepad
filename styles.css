@@ -137,14 +137,23 @@
 
 .checklist .activity-add {
     display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+}
+
+.checklist .activity-add .checked{
+    display: flex;
     text-align: left;
+    margin-top: 10px;
+    padding: 10px;
 
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.checklist .activity-add input[type=checkbox] {
+.checklist .activity-add .checked input[type=checkbox] {
     margin-right: 20px;
 }
 
