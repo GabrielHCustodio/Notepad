@@ -47,24 +47,29 @@ function keepTitle() {
 
 keepTitle()
 
-/*******************/
-
 // checklist
 function addActivity() {
     var buttonAd = document.querySelector('#add')
     buttonAd.addEventListener('click' , () => {
-        var check = document.querySelector('.activity-add')
+        var checkAct = document.querySelector('.activity-add')
         var activity = document.querySelector('#act').value
         
-        check.innerHTML += `
+        checkAct.innerHTML += `
         <div class="checked">
             <input type="checkbox" name="activity" id="activity">
+            <label for="activity"></label>
             <p id="newActivity">${activity}</p>
-            <img src="./assets/trash.svg" alt="trash">
+            <img src="./assets/trash.svg" alt="trash" id="trash" onclick="deleteAct()">
         </div>
         <!--checked-->
 
         <div class="clear"></div>
         `
     })
+}
+
+// delete item
+
+function deleteAct() {
+    
 }
