@@ -103,7 +103,15 @@
 
 .checklist {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    height: 100%;
+    max-height: 380px;
+
+    overflow: auto;
+}
+
+.checklist::-webkit-scrollbar {
+    display: none;
 }
 
 .checklist .activity {
@@ -153,9 +161,24 @@
     justify-content: space-around;
 }
 
-.checklist .activity-add .checked input[type=checkbox] {
-    margin-right: 20px;
+.checklist .activity-add .checked:nth-child(1) {
+    margin-top: -10px;
 }
+
+.checklist .activity-add .checked input[type=checkbox] {
+    display: none;
+}
+
+.checklist .activity-add .checked label {
+    width: 12px;
+    height: 12px;
+
+    background-color: white;
+    border: 1px solid black;
+
+    cursor: pointer;
+}
+
 
 .checklist .activity-add #newActivity {
     font-size: 18px;
@@ -172,13 +195,19 @@
 }
 
 .notes {
-    margin-top: 20px;
+    margin-top: -20px;
 }
 
 .notes textarea {
+    width: 300px;
     font-size: 16px;
     padding: 15px;
+    height: 375px;
 
     outline: none;
     border-radius: 10px;
+}
+
+.notes textarea::-webkit-scrollbar{
+    display: none;
 }
